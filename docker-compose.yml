@@ -35,6 +35,7 @@ services:
     network_mode: host
     labels:
       - "traefik.http.services.http-0-zlrsqwkh36jum8br69jn7t0k-gateway.loadbalancer.server.port=8642"
+      - "traefik.http.services.https-0-zlrsqwkh36jum8br69jn7t0k-gateway.loadbalancer.server.port=8642"
     volumes:
       - ~/.hermes:/opt/data
     environment:
